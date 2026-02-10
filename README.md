@@ -1,117 +1,69 @@
-Overview
+project:
+  name: "Sofia’s Bookstore Event Manager"
+  overview: >
+    A Python console application used to manage bookstore events such as book clubs,
+    author signings, and sales. The system allows users to create, update, delete,
+    and view events, as well as manage attendees.
 
-Sofia’s Bookstore Event Manager is a Python console application designed to help manage bookstore events such as book clubs, author signings, and sales.
+features:
+  - Add new events
+  - View all events
+  - Update event details
+  - Delete events
+  - Add attendees
+  - Prevent duplicate Event IDs
+  - Menu-driven interface
+  - Handles invalid input using try/except
 
-The program allows users to create, update, delete, and view events, as well as manage event attendees. It replaces the bookstore’s manual paper tracking system with a simple digital solution.
+technologies:
+  - Python 3
+  - Lists
+  - Dictionaries
+  - Functions
+  - Loops
+  - Exception Handling
 
-Features
+data_structure:
+  events_list: "List of event dictionaries"
+  event_example:
+    id: 101
+    name: "Author Signing"
+    type: "Signing"
+    date: "2026-03-10"
+    time: "15:00"
+    attendees:
+      - Alice
+      - Bob
 
-Add new events
+menu_options:
+  - "1. Add Event"
+  - "2. View Events"
+  - "3. Update Event"
+  - "4. Delete Event"
+  - "5. Add Attendee"
+  - "6. Exit"
 
-View all existing events
+functions:
+  - add_event(events_list)
+  - view_events(events_list)
+  - update_event(events_list)
+  - delete_event(events_list)
+  - add_attendee(events_list)
 
-Update event details
+how_to_run:
+  steps:
+    - Install Python 3
+    - Clone the repository
+    - Run: python event_manager.py
 
-Delete events
+learning_objectives:
+  - Use variables and data types
+  - Manage data using lists and dictionaries
+  - Organize code with functions
+  - Implement input validation
+  - Build a menu-driven program
 
-Add attendees to events
-
-Prevent duplicate Event IDs
-
-Handles invalid user input gracefully
-
-Menu-driven interface
-
-Technologies Used
-
-Python 3
-
-Lists
-
-Dictionaries
-
-Functions
-
-Loops
-
-Exception Handling (try/except)
-
-Event Data Structure
-
-Each event is stored as a dictionary inside a list called events_list.
-
-Example:
-
-{
-    "id": 101,
-    "name": "Author Signing",
-    "type": "Signing",
-    "date": "2026-03-10",
-    "time": "15:00",
-    "attendees": ["Alice", "Bob"]
-}
-
-Program Menu
-
-When the program runs, users see:
-
-1. Add Event
-2. View Events
-3. Update Event
-4. Delete Event
-5. Add Attendee
-6. Exit
-
-
-Users can perform multiple actions until they choose Exit.
-
-Functions
-
-The program includes the following main functions:
-
-add_event(events_list)
-
-view_events(events_list)
-
-update_event(events_list)
-
-delete_event(events_list)
-
-add_attendee(events_list)
-
-All functions modify the shared events_list.
-
-How to Run the Program
-
-Install Python 3 if not already installed.
-
-Download or clone this repository.
-
-git clone <your-repository-link>
-
-
-Open terminal or command prompt.
-
-Run the program:
-
-python event_manager.py
-
-Learning Objectives
-
-This project demonstrates:
-
-Use of variables and data types
-
-Managing collections using lists and dictionaries
-
-Creating modular programs with functions
-
-Input validation and error handling
-
-Menu-driven program design
-
-Author
-
-Mohammad Khalid Shams
-Cybersecurity & IT Student
-North Seattle College
+author:
+  name: "Mohammad Khalid Shams"
+  program: "IT / Cybersecurity Student"
+  school: "North Seattle College"
